@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/WhiteOut-thegame">
+    <Router>
       <div className="App">
         <Navbar />
         <Routes>
