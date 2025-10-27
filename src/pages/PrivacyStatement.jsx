@@ -1,4 +1,3 @@
-import React from 'react';
 import './PrivacyStatement.css';
 
 const PrivacyStatement = () => {
@@ -56,7 +55,7 @@ const PrivacyStatement = () => {
             <h2>Changes to This Statement</h2>
             <p>
               We may update this privacy statement from time to time. We will notify you of any 
-              changes by posting the new statement on this page and updating the "Last Updated" date.
+              changes by posting the new statement on this page and updating the &quot;Last Updated&quot; date.
             </p>
           </section>
 
