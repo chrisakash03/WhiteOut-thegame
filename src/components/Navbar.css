@@ -34,6 +34,10 @@
   font-weight: bold;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .navbar-menu {
   display: flex;
   align-items: center;
@@ -65,6 +69,17 @@
   .navbar-container {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
   }
   
   .navbar-menu {
