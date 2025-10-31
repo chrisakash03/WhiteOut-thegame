@@ -21,17 +21,17 @@ const Navbar = () => {
         <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="navbar-item">
             <Link to="/" className="navbar-links" onClick={toggleMenu}>
-              Home
+              <span>Home</span>
             </Link>
           </li>
           <li className="navbar-item">
             <Link to="/faq" className="navbar-links" onClick={toggleMenu}>
-              FAQ
+              <span>FAQ</span>
             </Link>
           </li>
           <li className="navbar-item">
             <Link to="/privacy-statement" className="navbar-links" onClick={toggleMenu}>
-              Privacy Statement
+              <span>Privacy Statement</span>
             </Link>
           </li>
         </ul>

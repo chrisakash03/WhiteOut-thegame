@@ -1,15 +1,31 @@
 import './Home.css';
+import PhoneModel from '../components/iPhone3D';
 
 const Home = () => {
   return (
     <div className="home">
       <div className="home-container">
-        <h1 className="home-title">Welcome to WhiteOut</h1>
-        <p className="home-description">
-          Experience the ultimate gaming adventure with WhiteOut. 
-          Dive into an immersive world filled with challenges, 
-          excitement, and endless possibilities.
-        </p>
+        <div className="home-hero">
+          <div className="home-title-section">
+            <h1 className="home-title">WhiteOut</h1>
+            <div className="home-text-container">
+              <p className="home-description">
+                A new game that fuses crosswords with scrabble! Try to achieve WhiteOut by finding all the words in the grid!
+              </p>
+              <a 
+                href="https://apple.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="download-button"
+              >
+                <span>Download Now</span>
+              </a>
+            </div>
+          </div>
+          <div className="home-model-section">
+            <PhoneModel />
+          </div>
+        </div>
         <div className="home-features">
           <div className="feature-card">
             <h3>Epic Adventures</h3>

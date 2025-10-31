@@ -1,13 +1,13 @@
 .privacy-statement {
   min-height: calc(100vh - 80px);
   padding: 2rem 0;
-  background-color: #f8f9fa;
+  background-color: #808080;
 }
 
 .privacy-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .privacy-title {

@@ -1,7 +1,7 @@
 #root {
   width: 100%;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -21,6 +21,6 @@
 
 @media screen and (max-width: 768px) {
   #root {
-    padding: 1rem;
+    padding: 0;
   }
 }
