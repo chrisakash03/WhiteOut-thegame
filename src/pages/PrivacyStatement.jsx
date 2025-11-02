@@ -9,9 +9,7 @@ const PrivacyStatement = () => {
           <section className="privacy-section">
             <h2>Information We Collect</h2>
             <p>
-              We collect information you provide directly to us, such as when you create an account, 
-              play our games, or contact us for support. This may include your name, email address, 
-              username, and gameplay data.
+              We only collect the device ID, and it is not tied to the user.
             </p>
           </section>
 
@@ -27,27 +25,14 @@ const PrivacyStatement = () => {
           <section className="privacy-section">
             <h2>Information Sharing</h2>
             <p>
-              We do not sell, trade, or otherwise transfer your personal information to third parties 
-              without your consent, except as described in this privacy statement. We may share 
-              information with service providers who assist us in operating our platform.
+              No information is collected and shared.
             </p>
           </section>
 
           <section className="privacy-section">
             <h2>Data Security</h2>
             <p>
-              We implement appropriate security measures to protect your personal information against 
-              unauthorized access, alteration, disclosure, or destruction. However, no method of 
-              transmission over the internet is 100% secure.
-            </p>
-          </section>
-
-          <section className="privacy-section">
-            <h2>Your Rights</h2>
-            <p>
-              You have the right to access, update, or delete your personal information. You may also 
-              opt out of certain communications from us. To exercise these rights, please contact us 
-              at privacy@whiteout-game.com.
+              There is no sensitive data collected.
             </p>
           </section>
 
@@ -63,10 +48,13 @@ const PrivacyStatement = () => {
             <h2>Contact Us</h2>
             <p>
               If you have any questions about this privacy statement, please contact us at 
-              privacy@whiteout-game.com or through our support channels.
+              chrisakashh@gmail.com or through our support channels.
             </p>
           </section>
         </div>
+        <p style={{ textAlign: 'center', marginTop: '2rem', color: '#666' }}>
+          Last Updated on 3 Nov 2025
+        </p>
       </div>
     </div>
   );
