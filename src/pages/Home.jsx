@@ -29,15 +29,15 @@ const Home = () => {
         <div className="home-features">
           <div className="feature-card">
             <h3>Epic Adventures</h3>
-            <p>Embark on thrilling quests and discover new worlds</p>
+            <p>Embark on finding words in challenging grids</p>
           </div>
           <div className="feature-card">
-            <h3>Multiplayer Fun</h3>
-            <p>Connect with friends and compete in exciting challenges</p>
+            <h3>Difficulty Levels</h3>
+            <p>play on Low, Mid, High and Extreme Difficulty!</p>
           </div>
           <div className="feature-card">
-            <h3>Stunning Graphics</h3>
-            <p>Experience breathtaking visuals and immersive gameplay</p>
+            <h3>Stunning Animations</h3>
+            <p>Experience smooth visuals and fun gameplay</p>
           </div>
         </div>
       </div>
