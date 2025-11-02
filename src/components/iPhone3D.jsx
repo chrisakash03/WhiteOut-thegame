@@ -11,6 +11,8 @@ const PhoneModel = () => {
     const video = videoRef.current;
     if (!video) return;
 
+    let hasPlayed = false; // Prevent multiple play attempts
+
     // Error handler for video loading issues
     const handleError = (e) => {
       console.error('Video error:', e);
@@ -22,10 +24,21 @@ const PhoneModel = () => {
       }
     };
 
-    // Handler to attempt playback when video is ready
-    const handleCanPlay = async () => {
+    // Improved handler to attempt playback when video is ready
+    const attemptPlay = async () => {
+      // Don't attempt if already playing or if we've already tried
+      if (hasPlayed || !video.paused) {
+        return;
+      }
+
+      // Check if video is ready to play (readyState >= 2 means enough data loaded)
+      if (video.readyState < 2) {
+        return;
+      }
+
       try {
         await video.play();
+        hasPlayed = true;
         console.log('Video playback started successfully');
       } catch (error) {
         console.warn('Autoplay was prevented:', error.message);
@@ -39,19 +52,23 @@ const PhoneModel = () => {
       console.log('Video metadata loaded, duration:', video.duration);
     };
 
-    // Add event listeners
+    // Add event listeners for multiple loading stages
     video.addEventListener('error', handleError);
-    video.addEventListener('canplay', handleCanPlay);
+    video.addEventListener('loadeddata', attemptPlay);
+    video.addEventListener('canplay', attemptPlay);
+    video.addEventListener('canplaythrough', attemptPlay);
     video.addEventListener('loadedmetadata', handleLoadedMetadata);
 
     // Attempt to play if video is already loaded
-    if (video.readyState >= 3) {
-      handleCanPlay();
+    if (video.readyState >= 2) {
+      attemptPlay();
     }
 
     return () => {
       video.removeEventListener('error', handleError);
-      video.removeEventListener('canplay', handleCanPlay);
+      video.removeEventListener('loadeddata', attemptPlay);
+      video.removeEventListener('canplay', attemptPlay);
+      video.removeEventListener('canplaythrough', attemptPlay);
       video.removeEventListener('loadedmetadata', handleLoadedMetadata);
     };
   }, []);
@@ -106,6 +123,7 @@ const PhoneModel = () => {
               loop
               muted
               playsInline
+              preload="auto"
             />
           </div>
         </div>
