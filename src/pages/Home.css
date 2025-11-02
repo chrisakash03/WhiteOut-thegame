@@ -5,6 +5,7 @@
   justify-content: center;
   background-color: #808080;
   color: white;
+  transition: background-color 1s ease-in-out;
 }
 
 .home-container {
@@ -37,6 +38,7 @@
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   line-height: 1.1;
+  transition: color 1s ease-in-out;
 }
 
 .home-text-container {
@@ -52,6 +54,7 @@
   width: 100%;
   line-height: 1.6;
   opacity: 0.95;
+  transition: color 1s ease-in-out;
 }
 
 .download-button {
@@ -147,12 +150,32 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #fff;
+  transition: color 1s ease-in-out;
 }
 
 .feature-card p {
   font-size: 1rem;
   line-height: 1.5;
   opacity: 0.9;
+  transition: color 1s ease-in-out;
+}
+
+/* Text color changes when background becomes white */
+body.white-background .home-title {
+  color: #000;
+  text-shadow: none;
+}
+
+body.white-background .home-description {
+  color: #000;
+}
+
+body.white-background .feature-card h3 {
+  color: #000;
+}
+
+body.white-background .feature-card p {
+  color: #000;
 }
 
 @media screen and (max-width: 968px) {

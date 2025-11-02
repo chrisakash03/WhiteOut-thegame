@@ -31,6 +31,15 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   background-color: #808080;
+  transition: background-color 1s ease-in-out;
+}
+
+body.white-background {
+  background-color: #ffffff;
+}
+
+body.white-background .home {
+  background-color: #ffffff;
 }
 
 h1 {
