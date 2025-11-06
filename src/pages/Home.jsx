@@ -13,7 +13,7 @@ const Home = () => {
                 A new game that fuses crosswords with scrabble! Try to achieve WhiteOut by finding all the words in the grid!
               </p>
               <a 
-                href="https://apple.com" 
+                href="https://apps.apple.com/sg/app/whiteout-clear-the-grid/id6753019693" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="download-button"
